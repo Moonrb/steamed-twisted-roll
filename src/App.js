@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import  'react-id-swiper/src/styles/scss/swiper.scss'
 import Appheader from './component/appHeader/appHeader'
 import Title from './component/title/title'
 class App extends Component {
