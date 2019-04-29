@@ -1,0 +1,73 @@
+div.swiperDiv {
+  width: 600px;
+  height: 450px;
+  background: #ccc;
+  margin: 20px 0 1000px 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+
+    .homeImgswiper-pagination {
+      position: absolute;
+      left: 547px;
+      bottom: 5px;
+      z-index: 2;
+    }
+
+    li {
+      cursor: pointer;
+      .homeimg {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+  .goPrev {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 50%;
+    width: 30px;
+    height: 70px;
+    background: rgba(255,255,255,.3);
+    display: none;
+    outline:none;
+    cursor: pointer;
+    border: 0px;
+    &:hover{
+      background: rgba(255,255,255,.6);
+    }
+  }
+  .goNext{
+    border: 0px;
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    top: 50%;
+    width: 30px;
+    height: 70px;
+    background: rgba(255,255,255,.3);
+    display: none;
+    outline:none;
+    cursor: pointer;
+    &:hover{
+      background: rgba(255,255,255,.6);
+    }
+
+  }
+  &:hover{
+    .goNext{
+      display: block;
+    }
+    .goPrev{
+      display: block;
+    }
+  }
+}
